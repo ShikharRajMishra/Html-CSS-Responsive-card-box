@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding:0auto;
+}
+.parent{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    background-color: black;
+}
+.cardboxcontainer
+{   display:flex;
+    flex-direction:row;
+    border-radius: 5px;
+    width:100%;
+    justify-content: space-around;
+}
+.box,.box2,.box3{
+    padding:5px;
+    margin:5px;
+    border-radius: 5px;
+    height:400px;
+    width:30%;
+    display:flex;
+    background-color:white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.box .header,.box2 .header,.box3 .header{
+    justify-content:center;
+    width:90%;
+    height:200px;
+}
+.box .header img,.box2 .header img,.box3 .header img{
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+}
+.box .content ,.box2 .content,.box3 .content{
+    text-align:justify;
+    height:250px;
+    margin:15px;
+    overflow:auto;
+    width:90%;
+    color:black;
+    border-radius: 5px;
+}
+h1{
+    font-size:30px;
+}
+h2{
+    font-size:15px;
+    padding-right:10px;
+    padding-left:10px;
+    margin:5px;
+}
+p{
+    padding:10px;
+    font-size:15px;
+}
+.box .footer,.box2 .footer,.box3 .footer{
+    height:50px;
+    align-items: center;
+} 
+.box .footer button,.box2 .footer button,.box3 .footer button{
+    padding:15px;
+    text-align:center;
+}
+.cardboxcontainer2
+{   display:flex;
+    flex-direction:ROW;
+    border-radius: 5px;
+    width:100%;
+    justify-content: space-around;
+}
+.box11,.box22,.box33{
+    padding:5px;
+    margin:5px;
+    border-radius: 5px;
+    height:400px;
+    width:30%;
+    display:flex;
+    color:black;
+    background-color:white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.box11 .header,.box22 .header,.box33 .header{
+    justify-content:center;
+    width:90%;
+    height:200px;
+}
+.box11 .header img,.box22 .header img,.box33 .header img{
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+}
+.box11 .content ,.box22 .content,.box33 .content{
+    text-align:justify;
+    height:250px;
+    margin:15px;
+    overflow:auto;
+    width:90%;
+    border-radius: 5px;
+}
+.box .footer,.box2 .footer,.box3 .footer{
+    height:50px;
+    align-items: center;
+} 
+.box .footer button,.box2 .footer button,.box3 .footer button{
+    padding:5px;
+    text-align:center;
+} 
+@media screen and (max-width: 640px){
+  .parent {display:grid;
+  grid-template-columns: auto repeat(1fr);
+width:100vh;
+   } 
+   .cardboxcontainer,.cardboxcontainer2
+{   display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+#r{
+    width:70%;
+}
+}
